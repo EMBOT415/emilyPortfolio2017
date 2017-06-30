@@ -158,7 +158,46 @@
                 <section>
                     <div class="parallax parallax2"></div>
                 </section>
-                <section class="spacer"></section>
+                <section id="emily-hobby" class="round-3">
+                    <h2 class="title">Hobbies</h2>
+                    <div class="section-content">
+
+                        <div class="block-col block-col-0">
+                            <div class="block-col-inside">
+                                <div class="img-container">
+                                    <img src="./img/wheel-800.jpg" alt="Notre histoire" class="img">
+                                </div>
+                                <div class="content">
+                                    <h6>Wheel Throwing</h6>
+                                    <p>Just a new hobby of mine.  Thought everything would start white and clean but the glazes are trickier than I thought so they sucked me in.  Next up?  Hand building platters, pinch pots, and maybe a pitcher?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-col block-col-1">
+                            <div class="block-col-inside">
+                                <div class="img-container">
+                                    <img src="./img/willieb-800.jpg" alt="Nos produits" class="img">
+                                </div>
+                                <div class="content">
+                                    <h6>Running</h6>
+                                    <p>Running over the Williamsburg.  If I want to go slow, I bring the dog and pretend he's the reason we're running slow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-col block-col-2">
+                            <div class="block-col-inside">
+                                <div class="img-container">
+                                    <img src="./img/cactus-800.jpg" alt="cactus" class="img">
+                                </div>
+                                <div class="content">
+                                    <h6>Cactus</h6>
+                                    <p>I was a Botany major in college, I have a black thumb, and my console log is always 'Cactus!'</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
                 <section>
                     <div class="parallax parallax3"></div>
                 </section>
@@ -229,10 +268,15 @@
 //     $('.ayllu-wrap').addClass('ani');
 // }, { offset: 500});
 
-$('#emily-section').waypoint(function(direction) {
-    // console.log('waypoints is logging');
-    $('#emily-div').toggleClass('show-about');
-}, { offset: 400});
+    $('#emily-section').waypoint(function(direction) {
+        // console.log('waypoints is logging');
+        $('#emily-div').toggleClass('show-about');
+    }, { offset: 400});
+
+        $('#emily-hobby').waypoint(function(direction) {
+        // console.log('waypoints is logging');
+        $('#emily-hobby').toggleClass('show-hobby');
+    }, { offset: 400});
                 // });
             </script>
 <!-- END WAYPOINT SCRIPTS -->
