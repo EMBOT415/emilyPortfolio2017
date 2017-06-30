@@ -96,7 +96,7 @@
                 <section class="spacer inner-wrapper">
                     <div class="">
                         <a href="index.html">
-                        <p aria-label="CodePen">
+                        <h6 >
                             <span data-text="E">E</span>
                             <span data-text="M">M</span>
                             <span data-text="I">I</span>
@@ -112,7 +112,7 @@
                             <span data-text="I">I</span>
                             <span data-text="C">C</span>
                             <span data-text="K">K</span>
-                        </p>   
+                        </h6>   
                         </a>             
                     </div>
                     <div>
@@ -129,7 +129,7 @@
                     
                     <div id="emily-div">
                         <a href="index.html">
-                        <p aria-label="CodePen">
+                        <h6>
                             <span data-text="E">E</span>
                             <span data-text="M">M</span>
                             <span data-text="I">I</span>
@@ -145,7 +145,7 @@
                             <span data-text="I">I</span>
                             <span data-text="C">C</span>
                             <span data-text="K">K</span>
-                        </p>   
+                        </h6>   
                         </a>             
                     </div>
                     <div>
@@ -168,7 +168,7 @@
                                     <img src="./img/wheel-800.jpg" alt="Notre histoire" class="img">
                                 </div>
                                 <div class="content">
-                                    <h6>Wheel Throwing</h6>
+                                    <h6>Clay</h6>
                                     <p>Just a new hobby of mine.  Thought everything would start white and clean but the glazes are trickier than I thought so they sucked me in.  Next up?  Hand building platters, pinch pots, and maybe a pitcher?</p>
                                 </div>
                             </div>
@@ -198,8 +198,16 @@
                     </div>
 
                 </section>
-                <section>
-                    <div class="parallax parallax3"></div>
+                <section class="section-emily-skills" id="skillz">
+                    <div class="parallax parallax3">
+                        <div class="emily-skills block-center">
+                            <h1 class="emily-skills-title">skills</h1>
+                            <div class="emily-skills-inside">
+                                <h3>this is where i'll put</h3>
+                                <h5>all the amazing things i can do</h5>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <footer>
@@ -273,10 +281,15 @@
         $('#emily-div').toggleClass('show-about');
     }, { offset: 400});
 
-        $('#emily-hobby').waypoint(function(direction) {
-        // console.log('waypoints is logging');
+    $('#emily-hobby').waypoint(function(direction) {
         $('#emily-hobby').toggleClass('show-hobby');
     }, { offset: 400});
+
+    $('#skillz').waypoint(function(direction) {
+        $('.emily-skills-inside').toggleClass('show-skills');
+    }, { offset: 300});
+
+
                 // });
             </script>
 <!-- END WAYPOINT SCRIPTS -->
