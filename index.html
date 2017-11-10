@@ -48,35 +48,28 @@
                                 <span class="icon"></span>
                             </li>
                             <li>
-                                <a href="about.html" class="btn btn-internal">about</a>
+                                <a href="#emily-hobby" class="btn btn-internal">about</a>
                             </li>
                             <li>
                                 <span class="icon"></span>
                             </li>
                             <li class="">
-<!--                                 <a href="#">CSS &#9662;</a>
+                                <a href="https://www.embot415.com" id="drop-trigger">CSS</a>
+                                <!-- <a href="www.embot415.com" id="drop-trigger">CSS &#9662;</a> -->
                                 <ul class="dropdown">
-                                    <li><a href="flexboxes.html" class="xbtn xbtn-internal">flex boxes</a></li>
-                                    <li><a href="padding.html" class="xbtn xbtn-internal">padding-bottom</a></li>
-                                    <li><a href="htmltables.html" class="xbtn xbtn-internal">html tables</a></li>
-                                    <li><a href="textoverlay.html" class="xbtn xbtn-internal">text overlay</a></li>
-                                </ul> -->
-
-                                            <a href="#" id="drop-trigger">CSS &#9662;</a>
-            <ul class="dropdown">
-                <li><a href="flexboxes.html">flex boxes</a></li>
-                <li><a href="padding.html">padding-bottom</a></li>
-                <li><a href="fonts.html">fonts</a></li>
-                <li><a href="csstables.html">css tables</a></li>
-                <li><a href="htmltables.html">html tables</a></li>
-                <li><a href="textoverlay.html">text overlay</a></li>
-            </ul>
+                                    <li><a href="flexboxes.html">flex boxes</a></li>
+                                    <li><a href="padding.html">padding-bottom</a></li>
+                                    <li><a href="fonts.html">fonts</a></li>
+                                    <li><a href="csstables.html">css tables</a></li>
+                                    <li><a href="htmltables.html">html tables</a></li>
+                                    <li><a href="textoverlay.html">text overlay</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <span class="icon"></span>
                             </li>
                             <li>
-                                <a href="skills.html">Skills</a>
+                                <a href="#skillz">Skills</a>
                             </li>
                         </ul>
                     </nav>
@@ -115,7 +108,7 @@
                         <img src="./img/leafv2.jpg">
                     </div>
                 </section>
-                <section class="spacer inner-wrapper">
+                <section  id="about" class="spacer inner-wrapper">
                     <div class="">
                         <a href="index.html">
                         <h6 >
@@ -270,44 +263,44 @@
                     var header = $(".header");
                     $(window).scroll(function(){
 
-                         var scroll = $(window).scrollTop();
-                         if (scroll >= 128) {
-                             body.addClass("sticky");
-                         } else {
-                             body.removeClass("sticky");
-                         }
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 128) {
+                            body.addClass("sticky");
+                        } else {
+                            body.removeClass("sticky");
+                        }
                     });
                 });
             </script>
 <!-- END HEADER SIZING SCRIPTS -->
 <!-- START WAYPOINT SCRIPT -->
 
-<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+            <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
             <script>
                 // $('document').ready(function(){
-// $('#ayllu-animation').waypoint(function(direction) {
-//     console.log('waypoints is logging');
-//     $('.ayllu-wrap').addClass('ani');
-// }, { offset: 500});
+                // $('#ayllu-animation').waypoint(function(direction) {
+                //     console.log('waypoints is logging');
+                //     $('.ayllu-wrap').addClass('ani');
+                // }, { offset: 500});
 
-    $('#emily-section').waypoint(function(direction) {
-        // console.log('waypoints is logging');
-        $('#emily-div').toggleClass('show-about');
-    }, { offset: 400});
+                    $('#emily-section').waypoint(function(direction) {
+                        // console.log('waypoints is logging');
+                        $('#emily-div').toggleClass('show-about');
+                    }, { offset: 400});
 
-    $('#emily-hobby').waypoint(function(direction) {
-        $('#emily-hobby').toggleClass('show-hobby');
-    }, { offset: 400});
+                    $('#emily-hobby').waypoint(function(direction) {
+                        $('#emily-hobby').toggleClass('show-hobby');
+                    }, { offset: 400});
 
-    $('#skillz').waypoint(function(direction) {
-        $('.emily-skills-inside').toggleClass('show-skills');
-    }, { offset: 300});
+                    $('#skillz').waypoint(function(direction) {
+                        $('.emily-skills-inside').toggleClass('show-skills');
+                    }, { offset: 300});
 
 
                 // });
             </script>
 <!-- END WAYPOINT SCRIPTS -->
         </div>
-<script src="js/emily.js"></script>
+        <script src="js/emily.js"></script>
     </body>
 </html>
