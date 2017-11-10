@@ -370,7 +370,7 @@ fonts
 }
 
 /* ==========================================================================
-    CSS FOR HEADER TEXT EFFECT
+    CSS FOR HOVER DOOR OPEN TEXT EFFECT
    ========================================================================== */
 
 
@@ -504,14 +504,6 @@ header .header-wrap {
 }
 
 
-nav ul {
-    list-style: none;
-}
-nav ul li {
-    display:inline-block;
-    font-family: 'Josefin Sans', sans-serif; 
-}
-
 footer {
 /*    position:absolute;
     bottom:0;
@@ -555,8 +547,8 @@ img.logo {
 .parallax3 {
     /* The image used */
 /*    background-image: url("../img/sarah-dorweiler-211779.jpg");  */  
-    background-image: url("../img/jesus-kiteque-224069.jpg");  
-    
+/*    background-image: url("../img/jesus-kiteque-224069.jpg");  */
+   background-image: url("../img/glassesv2.jpg"); 
 }
 /*le duc */
 #wrapper {
@@ -819,8 +811,11 @@ header .btn-lang:hover {
     max-height: 300px;
     border-radius: 50%; */
 }
-
-
+/*@media
+.block-col {
+  float:none;
+  margin:0 auto;
+}*/
 .round-3 .block-col .img-container img {
     display: block;
     width: 250px;
@@ -887,6 +882,14 @@ header .btn-lang:hover {
 .section-emily-skills {
   position:relative;
 }
+@media only screen and (max-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    .block-col {
+      float: none !important;
+      margin: 0 auto;
+    }
+}
+
 
 .emily-skills-title {
     display: inline-block;
@@ -947,3 +950,51 @@ header .btn-lang:hover {
 .section-emily-skills .block-center, .section-emily-skills .block-tall {
     width: 40%;
 }
+
+
+/* NAV DROP DOWN MENU CODE */
+
+ul{
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+    margin-bottom:0;
+}
+.topnav {
+    border-bottom: 1px solid black;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+    z-index: 1;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333 !important;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: #fff !important;
+    background: #000;
+}
+ul li ul.dropdown{
+    min-width: 100%;
+    background: #fff;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li a:hover ul.dropdown{
+    display: block !important; 
+}
+ul li a:hover + .dropdown li{
+    display: block !important;
+}
+
+
+
+

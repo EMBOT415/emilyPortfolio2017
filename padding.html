@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title>Padding-bottom trick</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Cormorant+Garamond|Josefin+Slab|Jura|Monoton|Nixie+One|Poiret+One|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bungee+Shade|Limelight|Muli|Rajdhani" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</head>
+<body>
+    <ul class="topnav">
+        <li>
+            <a href="#">CSS &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="flexboxes.html">flex boxes</a></li>
+                <li><a href="padding.html">padding-bottom</a></li>
+                <li><a href="fonts.html">fonts</a></li>
+                <li><a href="csstables.html">css tables</a></li>
+                <li><a href="htmltables.html">html tables</a></li>
+                <li><a href="textoverlay.html">text overlay</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">HTML</a>
+            <ul class="dropdown">
+                <!-- <li><a href="#">DOM manipulation</a></li> -->
+                <li><a href="sizechart.html">Size Chart</a></li>
+                <!--<li><a href="#">Printers</a></li> -->
+            </ul>
+        </li>
+        <li>
+            <a href="#">JS</a>
+            <ul class="dropdown">
+                <!-- <li><a href="#">Laptops</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Printers</a></li> -->
+            </ul>
+        </li>
+        <li>
+            <a href="index.html">HOME</a>
+        </li>
+    </ul>
+<div class="container">
+  <h1>Padding Bottom Trick </h1>
+  <p>Responsive images and videos</p>
+  <p>To get the correct padding-bottom percentage to use, divide (height/width)*1000 </p>
+  <div class="max900">
+  <div class="wrapper-with-intrinsic-ratio">
+    <div class="element-to-stretch"></div>
+  </div>
+</div>
+<p>HTML</p>
+<div class="code-wrapper">
+<pre>
+&ltdiv class="wrapper-with-intrinsic-ratio"&gt
+    &ltdiv class="element-to-stretch"&gt&lt/div&gt
+&lt/div&gt
+</pre>
+</div>
+    <p>CSS</p>
+<div class="code-wrapper">
+<pre>
+<code>.wrapper-with-intrinsic-ratio {
+    position: relative;
+    padding-bottom: 78%;
+    height: 0;
+}
+.element-to-stretch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Dad1.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</code>
+<pre>
+</div>
+
+<p>Responsive Image with "Vertical-Align: Middle" Text</p> 
+<div class="banner-padding-bottom2">
+    <div class="banner-image2">
+        <div class="inner-table2">
+            <div class="inner-tablecell2">
+                <div class="text-line2">Hoodie man bun craft beer succulents</div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>HTML</p>
+    <div class="code-wrapper">
+<pre class="auto">&ltdiv class="banner-padding-bottom2"&gt
+    &ltdiv class="banner-image2"&gt
+        &ltdiv class="inner-table2"&gt
+            &ltdiv class="inner-tablecell2"&gt
+                &ltdiv class="text-line">Hoodie man bun craft beer succulents&lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+    &lt/div&gt
+&lt/div&gt</pre>
+    </div>
+
+
+    <p>CSS</p>
+    <div class="code-wrapper">
+<pre>
+<code>.banner-padding-bottom2 {
+    padding-bottom: 44%;
+    position:  relative;
+    height:0;
+}
+.banner-image2 {
+    position: absolute;
+    background-image: url('EG3C9957.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;    
+}
+.inner-table2 {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.inner-tablecell2 {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+</code>
+</pre>
+</div>
+</div>
+</body>
+</html>
