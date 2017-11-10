@@ -616,7 +616,7 @@ header .header-inside {
   overflow: hidden; 
 }
 header .logo {
-  margin: 25px 60px 0 105px;
+  margin: 25px 60px 0 0;
   float: left;
   -moz-transition: margin 0.2s ease-in-out;
   -o-transition: margin 0.2s ease-in-out;
@@ -964,9 +964,6 @@ header .btn-lang:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
-
-
-
 .emily-skills .emily-skills-inside {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
